@@ -1,5 +1,3 @@
-package MCServerInfo;
-
 /**
  * 13.05.2017
  * Created by user Schalk (Lukas Schalk).
