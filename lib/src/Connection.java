@@ -1,12 +1,10 @@
-package MCServerInfo;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
 
 /**
  * 13.05.2017
- * Created by user Schal (Lukas Schalk).
+ * Created by user Schalk (Lukas Schalk).
  */
 
 public class Connection {
