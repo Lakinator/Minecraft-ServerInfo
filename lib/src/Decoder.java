@@ -1,5 +1,3 @@
-package MCServerInfo;
-
 import com.sun.istack.internal.Nullable;
 
 import javax.script.Invocable;
