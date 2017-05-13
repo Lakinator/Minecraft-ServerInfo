@@ -7,7 +7,7 @@ import javax.script.ScriptException;
 
 /**
  * 13.05.2017
- * Created by user Schal (Lukas Schalk).
+ * Created by user Schalk (Lukas Schalk).
  */
 
 public class Decoder {
