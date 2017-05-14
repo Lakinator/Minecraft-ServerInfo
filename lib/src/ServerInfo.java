@@ -18,13 +18,15 @@ public class ServerInfo {
 
         Decoder decoder = new Decoder(connection.getResult());
 
-        if (decoder.get("error", false, null) == "missing data") {
+        String error = decoder.get("error", false, null);
+
+        if (error == "missing data") {
             System.err.println("IP Addresse fehlt");
             exists = false;
-        } else if (decoder.get("error", false, null) == "invalid hostname or port") {
+        } else if (error == "invalid hostname or port") {
             System.err.println("Addresse oder Port falsch angegeben");
             exists = false;
-        } else if (decoder.get("error", false, null) == "internal server error") {
+        } else if (error == "internal server error") {
             System.err.println("Server nicht erreichbar");
             exists = false;
         } else if (decoder.get("last_online", false, null).isEmpty()) {
