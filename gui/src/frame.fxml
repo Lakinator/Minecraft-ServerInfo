@@ -4,69 +4,61 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+          prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="Controller">
 
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-  </rowConstraints>
-   <children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
 
-      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="324.0">
-         <children>
-            <Label text="Minecraft Server Addresse" textFill="WHITE">
-               <HBox.margin>
-                  <Insets right="20.0" />
-               </HBox.margin></Label>
-            <TextField fx:id="address_input" onKeyReleased="#ready" onKeyPressed="#ready" onKeyTyped="#ready" alignment="CENTER" prefHeight="25.0" prefWidth="233.0" GridPane.rowIndex="1" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="324.0">
+        <Label text="Minecraft Server Addresse" textFill="WHITE">
+            <HBox.margin>
+                <Insets right="20.0"/>
+            </HBox.margin>
+        </Label>
+        <TextField fx:id="address_input" onKeyReleased="#ready" onKeyPressed="#ready" onKeyTyped="#ready"
+                   alignment="CENTER" prefHeight="25.0" prefWidth="233.0" GridPane.rowIndex="1"/>
+    </HBox>
 
-      <HBox alignment="CENTER" GridPane.columnIndex="1">
-         <children>
-            <Label text="Port" textFill="WHITE">
-               <HBox.margin>
-                  <Insets right="20.0" />
-               </HBox.margin></Label>
-            <TextField fx:id="port_input" alignment="CENTER" prefHeight="25.0" prefWidth="161.0" text="25565" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" GridPane.columnIndex="1">
+        <Label text="Port" textFill="WHITE">
+            <HBox.margin>
+                <Insets right="20.0"/>
+            </HBox.margin>
+        </Label>
+        <TextField fx:id="port_input" alignment="CENTER" prefHeight="25.0" prefWidth="161.0" text="25565"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    </HBox>
 
-      <HBox alignment="CENTER" prefHeight="133.0" prefWidth="401.0" GridPane.rowIndex="1">
-         <children>
-            <Button id="go-button" mnemonicParsing="false" onAction="#run" prefHeight="34.0" prefWidth="200.0" text="Go" GridPane.rowIndex="2" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" prefHeight="133.0" prefWidth="401.0" GridPane.rowIndex="1">
+        <Button id="go-button" mnemonicParsing="false" onAction="#run" prefHeight="34.0" prefWidth="200.0" text="Go"
+                GridPane.rowIndex="2"/>
+    </HBox>
 
-      <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
-         <children>
-            <Label fx:id="loading_label" text="Enter an address" textAlignment="CENTER" textFill="WHITE" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Label fx:id="loading_label" text="Enter an address" textAlignment="CENTER" textFill="WHITE"/>
+    </HBox>
 
-      <HBox alignment="CENTER" GridPane.rowIndex="2">
-         <children>
-            <Label fx:id="name_label" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" GridPane.rowIndex="2">
+        <Label fx:id="name_label" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2"/>
+    </HBox>
 
-      <HBox alignment="CENTER" GridPane.rowIndex="3">
-         <children>
-            <Label fx:id="player_label" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" GridPane.rowIndex="3">
+        <Label fx:id="player_label" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3"/>
+    </HBox>
 
-      <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
-         <children>
-            <Label id="desc_label" fx:id="desc_label" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-         </children>
-      </HBox>
+    <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Label id="desc_label" fx:id="desc_label" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1"
+               GridPane.rowIndex="2"/>
+    </HBox>
 
-   </children>
 </GridPane>
